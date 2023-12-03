@@ -1,0 +1,27 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./core/typography";
+@import "./core/reset";
+@import "./core/root";
+@import "./vendors/grid";
+
+@import "./layouts/header";
+
+// page_import_start
+@import "./pages/index.scss";
+@import "./layouts/footer";
+// page_import_end
+
+// all area main class start (For Responsive)
+.header_area
+// .banner_area
+// .feature_area,
+// .benefit_area,
+// .about_area,
+// .form_area,
+// .address_area,
+// .footer_area
+{
+// display: none;
+}
+// all area main class end

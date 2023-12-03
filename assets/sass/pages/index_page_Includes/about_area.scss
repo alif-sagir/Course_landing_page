@@ -1,0 +1,94 @@
+// about_area start
+.about_area{
+    border: $border;
+    padding: 100px 0px;
+    border-bottom: 2px solid $light_black;
+    @include xs{
+        padding: 50px 0px;
+    }
+    @include sm{
+        padding: 50px 0px;
+    }
+    .about_area_content_all{
+        border: $border;
+        justify-content: center;
+        display: flex;
+        .about_area_content{
+            border: $border;
+            text-align: center;
+            width: 60%;
+            @include xs{
+                width: 100%;
+            }
+            .about_title{
+                border: $border;
+                font-size: 32px;
+                font-family:$font_SemiBold;
+                color: $brand_color;
+                @include xs{
+                    font-size: 22px;
+                }
+                @include sm{
+                    font-size: 22px;
+                }
+                @include md{
+                    font-size: 22px;
+                }
+            }
+            .about_description{
+                border: $border;
+                font-size: 18px;
+                font-family: $font_Regular;
+                color: $light_black;
+                margin: 45px 0px;
+                @include xs{
+                    margin: 20px 0px;
+                }
+            }
+            .about_image_area{
+                border: $border;
+                justify-content: center;
+                display: grid;
+            
+                .about_img{
+                    border: $border;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background-color: #e6e6e6;
+                    padding: 5px;
+                    margin: auto;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background-color:$off_white;
+                        position: absolute;
+                        top: -20px;
+                        left: 0px;
+                        @include xs{
+                            top: -12px;
+                        }
+                    }
+                    img{
+                        border: $border;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .about_img_text{
+                    border: $border;
+                    font-size: 12px;
+                    font-family: $font_Regular;
+                    color: $light_black;
+                    margin-top: 10px;
+                }
+            }
+           
+        }
+    }
+    
+}
+// about_area end

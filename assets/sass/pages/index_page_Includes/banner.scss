@@ -1,0 +1,108 @@
+// banner_area start
+.banner_area {
+    border: $border;
+    border-bottom: 1px solid $off_white;
+    .banner_area_content {
+        border: $border;
+        height: calc(100vh - 92px);
+        @include xs{
+            height: unset;
+        }
+        @include sm{
+            height: unset;
+        }
+        @include md{
+            height: unset;
+        }
+        @include lg{
+            height: unset;
+        }
+        @include xl{
+            height: unset;
+        }
+        // left_area start
+        .left_area {
+            border: $border;
+            align-items: center;
+            display: grid;
+            height: 100%;
+            .left_area_content {
+                border: $border;
+                .banner_title {
+                    border: $border;
+                    .banner_title_text {
+                        border: $border;
+                        font-size: 34px;
+                        font-family: $font_SemiBold;
+                        color: $brand_color;
+                        @include xs{
+                            font-size: 22px;
+                        }
+                        @include sm{
+                            font-size: 22px;
+                        }
+                        @include md{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .banner_discription {
+                    border: $border;
+                    margin: 35px 0px;
+                    @include xs{
+                        margin: 15px 0px;
+                    }
+                    .banner_discription_text {
+                        border: $border;
+                        font-size: 16px;
+                        font-family: $font_Regular;
+                        color: $light_black;
+                       
+                    }
+                }
+                .button_area {
+                    border: $border;
+                    @include xs{
+                      text-align: center;
+                      margin-bottom: 15px;
+                    }
+                    @include sm{
+                      text-align: center;
+                      margin-bottom: 35px;
+                    }
+                    .banner_button {
+                        border: $border;
+                        font-size: 18px;
+                        font-family: $font_Medium;
+                        color: $white;
+                        border: transparent;
+                        background-color: $brand_color;
+                        padding: 5px 30px;
+                        border-radius: 16px;
+                        @include xs{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        // left_area end
+
+        // image_area start
+        .image_area {
+            border: $border;
+            align-items: end;
+            display: flex;
+            height: 100%;
+            justify-content: end;
+           
+            img {
+                border: $border;
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+        // image_area end
+    }
+}
+// banner_area end

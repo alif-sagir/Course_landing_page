@@ -1,0 +1,41 @@
+// footer_area start
+.footer_area {
+    border: $border;
+    padding: 50px 0px;
+    background-color: #e9e9e9;
+    .footer_area_content {
+        border: $border;
+        text-align: center;
+        .privacy_policy_area {
+            border: $border;
+            padding-bottom: 26px;
+            .privacy_policy {
+                border: $border;
+                font-size: 16px;
+                font-family: $font_Regular;
+                color: $light_black;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 50%;
+                    height: 1px;
+                    background-color: $light_black;
+                    position: absolute;
+                   left: 50%;
+                   bottom: -46%;
+                   transform: translateY(-50%) translateX(-50%);
+                }
+            }
+        }
+        .copyright_area {
+            border: $border;
+            .copyright_text {
+                border: $border;
+                font-size: 14px;
+                font-family: $font_Regular;
+                color: $light_black;
+            }
+        }
+    }
+}
+// footer_area end

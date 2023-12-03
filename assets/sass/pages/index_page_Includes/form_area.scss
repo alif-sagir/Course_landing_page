@@ -1,0 +1,73 @@
+// form_area start
+.form_area {
+    border: $border;
+    padding: 50px 0px;
+    border-bottom: 2px solid $light_black;
+    .form_area_content_all{
+        border: $border;
+        justify-content: center;
+        display: flex;
+        .form_area_content {
+            border: $border;
+            width: 70%;
+            @include xs{
+                width: 100%;
+            }
+            @include sm{
+                width: 80%;
+            }
+            .form_title {
+                border: $border;
+                margin-bottom: 35px;
+                text-align: center;
+    
+                .form_title_text {
+                    border: $border;
+                    font-size: 32px;
+                    font-family: $font_SemiBold;
+                    color: $brand_color;
+                    @include xs{
+                        font-size: 22px;
+                    }
+                    @include sm{
+                        font-size: 22px;
+                    }
+                    @include md{
+                        font-size: 22px;
+                    }
+                }
+            }
+            form {
+                border: $border;
+                gap: 15px;
+                display: grid;
+                input {
+                    border: $border;
+                    display: block;
+                    width: 100%;
+                    font-size: 16px;
+                    font-family: $font_Medium;
+                    color: $light_black;
+                    border: 1px solid $light_black;
+                    padding:10px;
+                    border-radius: 3px;
+      
+                }
+                .button {
+                    border: $border;
+                    font-size: 18px;
+                    font-family: $font_SemiBold;
+                    color: $white;
+                    background-color: $brand_color;
+                    width: 100%;
+                    padding:10px;
+                    margin-top: 20px;
+                    border-radius: 3px;
+                    
+                }
+            }
+        }
+    }
+   
+}
+// form_area end
