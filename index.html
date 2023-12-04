@@ -46,43 +46,56 @@
 <body>
     <!-- header_area start -->
     <header class="header_area">
-        <div class="container">
-            <div class="header_area_content">
+        <div class="header_area_all">
+            <div class="container">
+                <div class="header_area_content">
 
-                <!-- logo_area start -->
-                <div class="logo_area">
-                    <a href="#" class="logo_area_img">
-                        <img src="./assets/images/logo/logo.png" alt="logo">
-                    </a>
+                    <!-- logo_area start -->
+                    <div class="logo_area">
+                        <a href="#" class="logo_area_img">
+                            <img src="./assets/images/logo/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- logo_area end -->
+
+
+
+                    <!-- navigation_area start -->
+                    <div class="navigation_area">
+
+                        <!-- menu_bar_area start -->
+                        <button onclick="active_menu_area.classList.toggle('active_menu')" class="menu_bar_area">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- menu_bar_area end -->
+
+                        <!-- nav_area start -->
+                        <div id="active_menu_area" class="nav_area">
+                            <ul>
+                                <div class="site_area" onclick="active_menu_area.classList.toggle('active_menu')">
+
+                                </div>
+                                <li>
+                                    <a href="#" class="nav_text">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav_text">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav_text">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- nav_area end -->
+
+                    </div>
+                    <!-- navigation_area end -->
+
                 </div>
-                <!-- logo_area end -->
-
-                <!-- menu_bar_area start -->
-                <button class="menu_bar_area">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <!-- menu_bar_area end -->
-
-                <!-- navigation_area start -->
-                <div class="navigation_area">
-
-                    <ul>
-                        <li>
-                            <a href="#" class="nav_text">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_text">Testimonials</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav_text">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <!-- navigation_area end -->
-
             </div>
         </div>
+
     </header>
     <!-- header_area end -->
 

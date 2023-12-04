@@ -5,118 +5,233 @@
     position: sticky;
     top: 0px;
     background-color: $white;
-    .header_area_content {
+   
+    .header_area_all {
         border: $border;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        // logo_area start
-        .logo_area {
+        @include xs {
+            position: relative;
+        }
+        @include sm {
+            position: relative;
+        }
+        @include md {
+            position: relative;
+        }
+        .header_area_content {
             border: $border;
-            width: 250px;
-            @include xs{
-               width: 125px;
-            }
-            @include sm{
-               width: 125px;
-            }
-            .logo_area_img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            // logo_area start
+            .logo_area {
                 border: $border;
-                width: 100%;
-                align-items: center;
-                display: flex;
-                img {
+                width: 250px;
+                @include xs {
+                    width: 125px;
+                }
+                @include sm {
+                    width: 125px;
+                }
+                .logo_area_img {
                     border: $border;
                     width: 100%;
-                    object-fit: contain;
-                }
-            }
-        }
-        // logo_area end
-
-        // menu_bar_area start 
-        .menu_bar_area{
-            border: $border;
-            align-items: center;
-            display: flex;
-            padding: 0px;
-            background-color: transparent;
-            display: none;
-            @include xs{
-                display: block;
-            }
-            @include sm{
-                display: block;
-            }
-            @include md{
-                display: block;
-            }
-            i{
-                border: $border;
-                font-size: 20px;
-                color: $brand_color;
-            }
-        }
-        // menu_bar_area end
-
-        // navigation_area start
-        .navigation_area {
-            border: $border;
-            align-items: center;
-            display: flex;
-            flex: 1;
-
-            @include xs{
-                display: none;
-            }
-            @include sm{
-                display: none;
-            }
-            @include md{
-                display: none;
-            }
-
-            ul {
-                border: $border;
-                display: flex;
-                @include xs{
-                    display: block;
-                }
-                @include sm{
-                    display: block;
-                }
-                li {
-                    border: $border;
-                    // &::before{
-                    //     content: '';
-
-                    // }
-                    border-left: 2px solid $off_white;
-                    &:first-child {
-                        border-left: 0px solid $off_white;
-                    }
-                    padding: 0px 50px;
-                   
-                    &:last-child{
-                        padding: 0px 0px 0px 50px;
-                    }
-                    @include xs{
-                        padding: unset;
-                    }
-                    .nav_text {
+                    align-items: center;
+                    display: flex;
+                    img {
                         border: $border;
-                        font-size: 18px;
-                        font-family: $font_Medium;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            // logo_area end
+
+            // navigation_area start
+            .navigation_area {
+                border: $border;
+                align-items: center;
+                display: flex;
+                flex: 1;
+                justify-content: end;
+
+                // menu_bar_area start
+                .menu_bar_area {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    padding: 0px;
+                    background-color: transparent;
+                    display: none;
+                    @include xs {
+                        display: block;
+                    }
+                    @include sm {
+                        display: block;
+                    }
+                    @include md {
+                        display: block;
+                    }
+                    i {
+                        border: $border;
+                        font-size: 20px;
                         color: $brand_color;
+                    }
+                }
+                // menu_bar_area end
+
+                // nav_area start
+                .nav_area {
+                    border: $border;
+                    @include xs {
+                        visibility: hidden;
+                        opacity: 0;
                         transition-duration: .4s;
-                        &:hover{
-                            color: $off_white;
+                        position: absolute;
+                        top: 0px;
+                        left: -1000px;
+                        width: 100%;
+                    }
+                    @include sm {
+                        visibility: hidden;
+                        opacity: 0;
+                        transition-duration: .4s;
+                        position: absolute;
+                        top: 0px;
+                        left: -1000px;
+                        width: 100%;
+                    }
+                    @include md {
+                        visibility: hidden;
+                        opacity: 0;
+                        transition-duration: .4s;
+                        position: absolute;
+                        top: 0px;
+                        left: -1000px;
+                        width: 100%;
+                    }
+
+                    ul {
+                        border: $border;
+                        display: flex;
+
+                        // position: relative;
+                        @include xs {
+                            display: block;
+                            background-color: $brand_color;
+                            width: 70%;
+                            height: 100vh;
+                            padding: 26px 10px 26px 26px;
+                        }
+                        @include sm {
+                            display: block;
+                            background-color: $brand_color;
+                            width: 70%;
+                            height: 100vh;
+                            padding: 26px 10px 26px 26px;
+                        }
+                        @include md {
+                            display: block;
+                            background-color: $brand_color;
+                            width: 70%;
+                            height: 100vh;
+                            padding: 26px 10px 26px 26px;
+                        }
+                        .site_area {
+                            width: 30%;
+                            background-color: rgba(20, 20, 20, 0.431372549);
+                            height: 100vh;
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            display: none;
+                            @include xs {
+                                display: block;
+                            }
+                            @include sm {
+                                display: block;
+                            }
+                            @include md {
+                                display: block;
+                            }
+                        }
+                        li {
+                            border: $border;
+                            // &::before{
+                            //     content: '';
+
+                            // }
+                            border-left: 2px solid $off_white;
+                            @include xs {
+                                border-left: unset;
+                                margin: 10px 0px;
+                            }
+                            @include sm {
+                                border-left: unset;
+                                margin: 10px 0px;
+                            }
+                            @include md {
+                                border-left: unset;
+                                margin: 10px 0px;
+                            }
+                            &:first-child {
+                                border-left: 0px solid $off_white;
+                            }
+                            padding: 0px 50px;
+                            @include xs {
+                                padding: unset;
+                            }
+                            @include sm {
+                                padding: unset;
+                            }
+                            @include md {
+                                padding: unset;
+                            }
+                            &:last-child {
+                                padding: 0px 0px 0px 50px;
+                                @include xs {
+                                    padding: unset;
+                                }
+                                @include sm {
+                                    padding: unset;
+                                }
+                                @include md {
+                                    padding: unset;
+                                }
+                            }
+
+                            .nav_text {
+                                border: $border;
+                                font-size: 18px;
+                                font-family: $font_Medium;
+                                color: $brand_color;
+                                transition-duration: 0.4s;
+                                &:hover {
+                                    color: $off_white;
+                                }
+                                @include xs {
+                                    color: $white;
+                                }
+                                @include sm {
+                                    color: $white;
+                                }
+                                @include md {
+                                    color: $white;
+                                }
+                            }
                         }
                     }
                 }
+                .active_menu {
+                    visibility: visible;
+                    opacity: 1;
+                    left: 0px;
+                    position: fixed;
+                    top: 0px;
+                }
+                // nav_area end
             }
+            // navigation_area end
         }
-        // navigation_area end
     }
 }
 // header_area end

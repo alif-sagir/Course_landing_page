@@ -16,16 +16,15 @@ html {
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #192f59;
-        background: #144f61;
+        background: $brand_color;
         border-radius: 0px;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #ffffff;
+        background: $off_white;
     }
 
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 // scrollbar edit end
