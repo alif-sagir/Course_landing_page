@@ -26,8 +26,15 @@
             align-items: center;
             display: grid;
             height: 100%;
+            @include xs{
+                margin-top: 20px;
+            }
+            @include sm{
+                margin-top: 20px;
+            }
             .left_area_content {
                 border: $border;
+                // margin-bottom: 90px;
                 .banner_title {
                     border: $border;
                     .banner_title_text {
@@ -96,6 +103,10 @@
             height: 100%;
             justify-content: end;
            
+           
+            @include xxl{
+                margin-left: 40px;
+            }
             img {
                 border: $border;
                 object-fit: contain;

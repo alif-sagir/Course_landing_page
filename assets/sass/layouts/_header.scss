@@ -5,7 +5,8 @@
     position: sticky;
     top: 0px;
     background-color: $white;
-   
+    z-index: 1;
+    // border-bottom: 1px solid $light_black;
     .header_area_all {
         border: $border;
         @include xs {
@@ -85,7 +86,7 @@
                     @include xs {
                         visibility: hidden;
                         opacity: 0;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                         position: absolute;
                         top: 0px;
                         left: -1000px;
@@ -94,7 +95,7 @@
                     @include sm {
                         visibility: hidden;
                         opacity: 0;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                         position: absolute;
                         top: 0px;
                         left: -1000px;
@@ -103,7 +104,7 @@
                     @include md {
                         visibility: hidden;
                         opacity: 0;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                         position: absolute;
                         top: 0px;
                         left: -1000px;
@@ -156,36 +157,27 @@
                         }
                         li {
                             border: $border;
-                            // &::before{
-                            //     content: '';
-
-                            // }
                             border-left: 2px solid $off_white;
-                            @include xs {
-                                border-left: unset;
-                                margin: 10px 0px;
-                            }
-                            @include sm {
-                                border-left: unset;
-                                margin: 10px 0px;
-                            }
-                            @include md {
-                                border-left: unset;
-                                margin: 10px 0px;
-                            }
+                            padding: 0px 50px;
                             &:first-child {
                                 border-left: 0px solid $off_white;
                             }
-                            padding: 0px 50px;
                             @include xs {
+                                border-left: unset;
+                                margin: 10px 0px;
                                 padding: unset;
                             }
                             @include sm {
+                                border-left: unset;
+                                margin: 10px 0px;
                                 padding: unset;
                             }
                             @include md {
+                                border-left: unset;
+                                margin: 10px 0px;
                                 padding: unset;
                             }
+
                             &:last-child {
                                 padding: 0px 0px 0px 50px;
                                 @include xs {

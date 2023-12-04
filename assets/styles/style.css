@@ -117,6 +117,7 @@ html ::-webkit-scrollbar-thumb:hover {
   position: sticky;
   top: 0px;
   background-color: #ffffff;
+  z-index: 1;
 }
 .header_area .header_area_all {
   border: 0px solid red;
@@ -298,39 +299,27 @@ html ::-webkit-scrollbar-thumb:hover {
   border-left: 2px solid #949494;
   padding: 0px 50px;
 }
-@media screen and (max-width: 575.9px) {
-  .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
-    border-left: unset;
-    margin: 10px 0px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.9px) {
-  .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
-    border-left: unset;
-    margin: 10px 0px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.9px) {
-  .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
-    border-left: unset;
-    margin: 10px 0px;
-  }
-}
 .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li:first-child {
   border-left: 0px solid #949494;
 }
 @media screen and (max-width: 575.9px) {
   .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
+    border-left: unset;
+    margin: 10px 0px;
     padding: unset;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px) {
   .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
+    border-left: unset;
+    margin: 10px 0px;
     padding: unset;
   }
 }
 @media (min-width: 768px) and (max-width: 991.9px) {
   .header_area .header_area_all .header_area_content .navigation_area .nav_area ul li {
+    border-left: unset;
+    margin: 10px 0px;
     padding: unset;
   }
 }
@@ -424,6 +413,16 @@ html ::-webkit-scrollbar-thumb:hover {
   display: grid;
   height: 100%;
 }
+@media screen and (max-width: 575.9px) {
+  .banner_area .banner_area_content .left_area {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .banner_area .banner_area_content .left_area {
+    margin-top: 20px;
+  }
+}
 .banner_area .banner_area_content .left_area .left_area_content {
   border: 0px solid red;
 }
@@ -502,6 +501,11 @@ html ::-webkit-scrollbar-thumb:hover {
   display: flex;
   height: 100%;
   justify-content: end;
+}
+@media (min-width: 1400px) {
+  .banner_area .banner_area_content .image_area {
+    margin-left: 40px;
+  }
 }
 .banner_area .banner_area_content .image_area img {
   border: 0px solid red;
