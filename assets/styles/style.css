@@ -118,6 +118,7 @@ html ::-webkit-scrollbar-thumb:hover {
   top: 0px;
   background-color: #ffffff;
   z-index: 1;
+  box-shadow: 0px 1px 5px #cfcfcf;
 }
 .header_area .header_area_all {
   border: 0px solid red;
