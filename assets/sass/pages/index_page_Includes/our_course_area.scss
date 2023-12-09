@@ -1,0 +1,475 @@
+// our_course area start
+.our_course_area {
+    border: $border;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $light_black;
+    @include xs {
+        padding-bottom: 60px;
+    }
+    .our_course_area_content {
+        border: $border;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        padding-bottom: 49px;
+        @include xs() {
+            padding-bottom: 38px;
+        }
+        // our_course_area_title start
+        .our_course_area_title {
+            border: $border;
+            text-align: center;
+            padding: 48px 0px 58px 0px;
+            margin-top: 100px;
+            @include xs() {
+                padding: 38px 0px 38px 0px;
+            }
+            .area_title {
+                border: $border;
+                font-size: 32px;
+                font-family:$font_SemiBold;
+                color: $brand_color;
+                @include xs {
+                    font-size: 20px;
+                }
+            }
+        }
+        // our_course_area_title end
+        // course_schedule_name start
+        .course_schedule_name {
+            border: $border;
+            padding-bottom: 32px;
+            @include lg {
+                justify-content: center;
+                display: flex;
+            }
+            ul {
+                border: $border;
+                display: flex;
+                @include xs() {
+                    display: block;
+                    text-align: center;
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                @include sm() {
+                    gap: 10px;
+                    justify-content: center;
+                }
+                @include md() {
+                    justify-content: center;
+                }
+                li {
+                    border: $border;
+                    margin-left: 64px;
+                    @include xs() {
+                        margin-left: 0px;
+                    }
+                    @include sm() {
+                        margin-left: 0px;
+                    }
+
+                    &:first-child {
+                        margin-left: 31px;
+                        @include xs() {
+                            margin-left: 0px;
+                        }
+                        @include sm() {
+                            margin-left: 0px;
+                        }
+                        @include md() {
+                            margin-left: 0px;
+                        }
+                        @include lg {
+                            margin-left: 0px;
+                        }
+                    }
+                    a {
+                        border: $border;
+                        font-size: 20px;
+                        line-height: 40px;
+                        font-family: $font_Medium;
+                        color: $light_black;
+                        transition-duration: 0.4s;
+                        position: relative;
+                        @include xs() {
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                        @include sm() {
+                            font-size: 18px;
+                        }
+                        @include md() {
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            color: $light_black;
+                            &::before {
+                                background-color: $off_white;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            // background-color: $primary_color;
+                            background-color: transparent;
+                            position: absolute;
+                            top: 36px;
+                            transition-duration: 0.4s;
+                            @include xs() {
+                                top: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // course_schedule_name end
+
+        // our_course_all_card start
+        .our_course_all_card {
+            display: grid;
+            gap: 22px;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0px 110px;
+            position: relative;
+            @include xs() {
+                display: block;
+                margin: unset;
+            }
+            @include sm() {
+                display: block;
+                margin: unset;
+            }
+            @include md() {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            @include lg {
+                grid-template-columns: 1fr 1fr;
+            }
+            // .slider_iconn{
+            //     width: 60px;
+            //     height: 60px;
+            //     background-color: $white;
+            //     justify-content: center;
+            //     display: flex;
+            //     align-items: center;
+            //     border-radius: 50%;
+            //     transition-duration: .4s;
+            //     border: 1px solid #dbdbdb;
+            //     &:hover{
+            //         background-color: $primary_color;
+            //         i{
+            //             color: $white;
+            //         }
+            //     }
+
+            //     i{
+            //         font-size: 30px;
+            //         color: $secondary_color;
+            //         transition-duration: .4s;
+            //     }
+
+            // }
+            .left_iconnn {
+                position: absolute;
+                top: 220px;
+                left: -90px;
+            }
+            .right_iconnn {
+                position: absolute;
+                top: 220px;
+                right: -90px;
+            }
+            .c_card {
+                border: 1px solid rgb(228, 227, 227);
+                // display: grid;
+                // align-content: space-between;
+                background-color: $white;
+
+                margin-bottom: 49px;
+                border-radius: 8px 8px 0px;
+
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                // margin-bottom: 49px;
+
+                @include xs() {
+                    margin: 20px 10px 0px 12px;
+                }
+                @include sm() {
+                    margin: 20px 10px 0px 12px;
+                    width: 350px;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+
+                &:hover {
+                    .card_title_area {
+                        .card_title {
+                            .title_text {
+                                color: $brand_color;
+                            }
+                        }
+                        .amount_and_button_area {
+                            .button_all {
+                                background-color:$brand_color;
+                                @include xs {
+                                    // width: 85px;
+                                    // display: block;
+                                }
+                                .btn-text {
+                                    color: $white;
+                                }
+                                .btn_icon {
+                                    i {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card_img_area {
+                        .card_img {
+                            img {
+                                transform: scale(0.9);
+                            }
+                        }
+                    }
+                }
+
+                .card_img_area {
+                    border: $border;
+                    justify-content: center;
+                    display: flex;
+                    padding: 24px 72px;
+                    height: 250px;
+                    border-bottom: 2px solid #e0e0e0;
+                    @include xs() {
+                        padding: unset;
+                        height: 190px;
+                    }
+                    // height: 225px;
+                    // align-items: center;
+                    // display: grid;
+                    .card_img {
+                        border: $border;
+                        width: 200px;
+                        @include xs() {
+                            width: 170px;
+                            align-content: center;
+                            display: grid;
+                        }
+                        // justify-content: center;
+                        // display: flex;
+                        // padding: 24px 72px;
+                        img {
+                            border: $border;
+                            width: 100%;
+                            transition-duration: 0.4s;
+                        }
+                    }
+                }
+                // card_title_area start
+                .card_title_area {
+                    // border-top: 2px solid #e0e0e0;
+                    padding-top: 17px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex: 1;
+                    .card_title {
+                        border: $border;
+                        padding-bottom: 14px;
+                        margin-left: 16px;
+                        @include xs() {
+                            margin: 0px 5px;
+                        }
+                        .title_text {
+                            border: $border;
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-family: $font_SemiBold;
+                            color: $light_black;
+                            transition-duration: 0.4s;
+                            @include xs() {
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                    .day_and_boking_area {
+                        border: $border;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 14px;
+                        margin-left: 19px;
+                        @include xs() {
+                            margin: 0px 5px;
+                        }
+                        .day_area {
+                            border: $border;
+                            align-items: center;
+                            display: flex;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-family: $font_Medium;
+                            .day_icon {
+                                border: $border;
+                                padding-right: 8px;
+                                img {
+                                    border: $border;
+                                }
+                            }
+                            .day_tex {
+                                border: $border;
+                            }
+                        }
+                        .boking_area {
+                            border: $border;
+                            font-size: 12px;
+                            line-height: 15px;
+                            font-family: $font_Medium;
+                            border: 3px solid $brand_color;
+                            margin-right: 16px;
+
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+
+                            // align-items: center;
+                            // display: grid;
+                            // justify-content: center;
+                            padding-top: 10px;
+                            text-align: center;
+
+                            .boking_text {
+                                border: $border;
+                                display: block;
+                            }
+                        }
+                    }
+                    .amount_and_button_area {
+                        border: $border;
+                        display: flex;
+                        justify-content: space-between;
+                        border-top: 1px solid $light_black;
+                        margin-left: 16px;
+                        padding-top: 18px;
+                        @include xs() {
+                            // display: unset;
+                            text-align: center;
+                            margin: 0px 5px;
+
+                            // display: flex;
+                        }
+                        .all_amount {
+                            border: $border;
+                            display: flex;
+                            align-items: center;
+
+                            .previous_amount_area {
+                                border: $border;
+                                .previous_amount {
+                                    border: $border;
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                    font-family: $font_SemiBold;
+                                    color: $brand_color;
+                                    padding-right: 6px;
+                                    @include xs {
+                                        font-size: 13px;
+                                    }
+                                    .taka {
+                                        border: $border;
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+                            .current_amount_area {
+                                border: $border;
+                                .current_amount {
+                                    border: $border;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    font-family: $font_SemiBold;
+                                    @include xs {
+                                        font-size: 16px;
+                                    }
+                                    .taka {
+                                        border: $border;
+                                    }
+                                }
+                            }
+                        }
+                        .button_all {
+                            // border: $border;
+                            font-size: 16px;
+                            line-height: 14px;
+                            font-family: $font_Medium;
+                            padding: 17px 25px;
+                            border-radius: 6px;
+                            border: 1px solid $brand_color;
+                            // background-color: $primary_color;
+                            color: $light_black;
+                            transition-duration: 0.7s;
+                            // border: transparent;
+                            @include xs() {
+                                margin: 10px 0px;
+                                padding: 10px 5px;
+                                width: 95px;
+                            }
+                            .btn-text {
+                                border: $border;
+                                padding-right: 8px;
+                                transition-duration: 0.4s;
+                                @include xs {
+                                    font-size: 12px;
+                                    display: unset;
+                                }
+                            }
+                            .btn_icon {
+                                border: $border;
+                                @keyframes right_animation {
+                                    0% {
+                                        transform: translate(0px);
+                                    }
+
+                                    50% {
+                                        transform: translate(10px);
+                                    }
+
+                                    100% {
+                                        transform: translate(0px);
+                                    }
+                                }
+                                animation: right_animation 2s linear infinite;
+                                i {
+                                    border: $border;
+                                    font-size: 16px;
+                                    color: $light_black;
+                                    transition-duration: 0.4s;
+                                    @include xs {
+                                        font-size: 12px;
+                                    }
+                                }
+                                // img {
+                                //     border: $border;
+                                // }
+                            }
+                        }
+                    }
+                }
+                // card_title_area end
+            }
+        }
+        // our_course_all_card end
+    }
+}
+// our_course area end
