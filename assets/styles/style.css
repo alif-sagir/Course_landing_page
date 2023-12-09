@@ -690,6 +690,7 @@ html ::-webkit-scrollbar-thumb:hover {
 .about_area {
   border: 0px solid red;
   padding: 100px 0px;
+  border-top: 2px solid #4b4b4b;
   border-bottom: 2px solid #4b4b4b;
 }
 @media screen and (max-width: 575.9px) {
@@ -1521,6 +1522,297 @@ html ::-webkit-scrollbar-thumb:hover {
 @media screen and (max-width: 575.9px) {
   .our_course_area .our_course_area_content .our_course_all_card .c_card .card_title_area .amount_and_button_area .button_all .btn_icon i {
     font-size: 12px;
+  }
+}
+
+.class_module {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module {
+    margin-top: 40px;
+  }
+}
+.class_module .class_module_head {
+  align-items: center;
+  display: flex;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_head {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+.class_module .class_module_head .class_module_title {
+  color: var(--mute-color-100, #1c1c1c);
+  /* H3/Semibold 32 */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 15px 24px;
+  font-size: 32px;
+  font-family: "Poppins-SemiBold";
+  color: #202020;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_head .class_module_title {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+.class_module .class_module_head .class_module_content {
+  display: flex;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_head .class_module_content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.class_module .class_module_head .class_module_content li {
+  color: var(--mute-color-80, #494949);
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  margin: 0px 12px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_head .class_module_content li {
+    margin: 0px 5px;
+  }
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details {
+    width: 100%;
+  }
+}
+.class_module .class_module_details .class_module_features {
+  margin-top: 24px;
+  border-radius: 8px;
+  border: 1px solid #d2d2d2;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features {
+    padding-top: 5px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+  margin: 0px 17px;
+  border-bottom: 1px solid rgb(217, 214, 214);
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title {
+    justify-content: space-between;
+    margin: 0px 10px;
+    padding: 0px 10px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number {
+  display: flex;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_number {
+  color: var(--mute-color-80, #494949);
+  font-family: Baloo Da 2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_number {
+    font-size: 16px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_number span {
+  color: var(--mute-color-80, #494949);
+  font-family: Baloo Da 2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-left: 10px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_number span {
+    margin-left: 4px;
+    font-size: 16px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details {
+  margin-left: 43px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details {
+    margin-left: 20px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .title {
+  color: var(--mute-color-100, #1c1c1c);
+  font-family: Baloo Da 2;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .title {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .details {
+  color: var(--mute-color-80, #494949);
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  display: flex;
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .details li {
+  margin: 0px 10px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .details li {
+    margin: 0px 5px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_title .class_module_title_and_number .class_module_title_details .details li:first-child {
+  margin-left: 0;
+}
+.class_module .class_module_details .class_module_features li.active {
+  display: block;
+}
+.class_module .class_module_details .class_module_features li.active .class_module_title {
+  border-bottom: 0;
+}
+.class_module .class_module_details .class_module_features li.active .class_module_title .class_module_acordion_icon i {
+  color: red;
+}
+.class_module .class_module_details .class_module_features li.active .class_module_title .class_module_acordion_icon i::before {
+  content: "\f106";
+}
+.class_module .class_module_details .class_module_features li.active .class_module_feature_content {
+  display: block;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content {
+  display: none;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li {
+  margin: 0px 17px;
+  padding: 8px 0px;
+  border-top: 1px solid #d2d2d2;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_feature_content ul li {
+    margin: 0px 10px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .class_module_class_no {
+  color: var(--mute-color-100, #1c1c1c);
+  /* H6/Medium 16 */
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  margin-bottom: 8px;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic {
+  margin-bottom: 16px;
+  display: flex;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic .live_class_icon img {
+  width: 24;
+  height: 24px;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic .class_module_live_class {
+  margin-left: 8px;
+  color: var(--mute-color-80, #494949);
+  /* Body Regular 16 */
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic .class_module_live_class {
+    margin-left: 3px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic .class_module_topic {
+  color: var(--mute-color-80, #494949);
+  /* Body Regular 16 */
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-left: 5px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_feature_content ul li .live_class_and_topic .class_module_topic {
+    margin-left: 2px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq {
+  display: flex;
+  margin-left: 5px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq {
+    margin-left: 0px;
+  }
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq .quiz_icon i {
+  width: 24px;
+  height: 24px;
+  color: #787e8a;
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq .quiz {
+  color: var(--mute-color-80, #494949);
+  /* Body Regular 16 */
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq .mcq {
+  color: var(--mute-color-80, #494949);
+  /* Body Regular 16 */
+  font-family: Baloo Da 2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-left: 5px;
+}
+@media screen and (max-width: 575.9px) {
+  .class_module .class_module_details .class_module_features li .class_module_feature_content ul li .quiz_and_mcq .mcq {
+    margin-left: 2px;
   }
 }
 
