@@ -61,6 +61,7 @@
                 .course_info_thubnail {
                     border-radius: 16px 16px 0px 0px;
                     img {
+                        border: 1px solid $border;
                         transform: scale(1.2);
                         overflow: hidden;
                     }

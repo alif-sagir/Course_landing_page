@@ -2141,6 +2141,7 @@ html ::-webkit-scrollbar-thumb:hover {
   border-radius: 16px 16px 0px 0px;
 }
 .course_info .course_info_div .course_info_thubnail_and_icon:hover .course_info_thubnail img {
+  border: 1px solid 0px solid red;
   transform: scale(1.2);
   overflow: hidden;
 }
