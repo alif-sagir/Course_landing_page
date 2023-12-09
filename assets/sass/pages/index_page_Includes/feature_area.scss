@@ -25,7 +25,7 @@
         // feature_item start
         .feature_item{
             border: $border;
-            padding: 0px 90px;
+            padding: 0px 20px;
             @include xs{
                 padding: 0px 0px;
             }
@@ -33,10 +33,10 @@
                 padding: 0px 10px;
             }
             @include lg{
-                padding: 0px 15px;
+                padding: 0px 10px;
             }
             @include xl{
-                padding: 0px 40px;
+                padding: 0px 10px;
             }
 
             .feature_logo{

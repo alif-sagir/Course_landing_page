@@ -1,0 +1,23 @@
+.why_learn_this_course {
+    // border: 1px solid red;
+
+    .why_learn_this_course_title {
+        font-size: 26px;
+        line-height: 39px;
+        font-weight: 600;
+        margin-top: 32px;
+        @include xs() {
+            font-size: 16px;
+            line-height: 29px;
+        }
+    }
+    .why_learn_this_course_details {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25.6px;
+        margin-top: 8px;
+        @include xs() {
+            font-size: 14px;
+        }
+    }
+}

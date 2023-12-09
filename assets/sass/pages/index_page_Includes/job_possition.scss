@@ -1,0 +1,117 @@
+.job_possition_and_freelancing {
+    // border: 1px solid red;
+    margin-top: 34px;
+    display: flex;
+    @include xs() {
+        flex-direction: column;
+    }
+    .job_possition {
+        // border: 1px solid red;
+        flex: 1;
+        // border: 1px solid red;
+        background-color: #f3f4f6;
+        border-radius: 8px;
+        margin-right: 22px;
+        @include xs() {
+            width: 100%;
+            margin-right: 10px;
+        }
+        .job_possition_title {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-left: 24px;
+            @include xs() {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+        }
+        .job_categories {
+            margin-top: 18px;
+            margin-left: 24px;
+            @include xs() {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .job_categorie {
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                @include xs() {
+                    margin-bottom: 8px;
+                }
+                .job_categorie_icon {
+                    margin-right: 6px;
+                    color: #27ae60;
+                    @include xs() {
+                        font-size: small;
+                    }
+                }
+                .job_categorie_title {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    @include xs() {
+                        font-size: 15px;
+                        line-height: 100%;
+                        // margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .freelancing_project {
+        // border: 1px solid red;
+        flex: 1;
+        background-color: #f3f4f6;
+        border-radius: 8px;
+        // border: 1px solid red;
+        @include xs() {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .freelancing_project_title {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-left: 24px;
+            @include xs() {
+                margin-left: 15px;
+                font-size: 18px;
+            }
+        }
+        .freelancing_categories {
+            margin-top: 18px;
+            margin-left: 24px;
+            @include xs() {
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+            .freelancing_categorie {
+                margin-bottom: 16px;
+                display: flex;
+                @include xs() {
+                    margin-bottom: 10px;
+                    align-items: center;
+                }
+                .freelancing_categorie_icon {
+                    margin-right: 6px;
+                    color: #27ae60;
+                    @include xs() {
+                        font-size: small;
+                    }
+                }
+                .freelancing_categorie_title {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    @include xs() {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

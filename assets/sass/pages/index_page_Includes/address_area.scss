@@ -41,7 +41,7 @@
             .address_item {
                 border: $border;
                 text-align: center;
-                padding: 0px 90px;
+                padding: 0px 25px;
                 @include xs{
                     padding: 0px 0px;
                 }
@@ -55,7 +55,7 @@
                     padding: 0px 15px;
                 }
                 @include xl{
-                    padding: 0px 40px;
+                    padding: 0px 25px;
                 }
                 .address_logo {
                     border: $border;
